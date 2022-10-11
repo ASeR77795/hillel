@@ -1,0 +1,143 @@
+.body {
+  margin: 0px;
+  font-family: Tahoma, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.header {
+  background: #343b42;
+  background-image: url(../img/background-top.png);
+  background-position: right -77px top;
+  background-repeat: no-repeat;
+}
+.container {
+  max-width: 1040px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.main-content {
+  padding-top: 33px;
+  padding-bottom: 58px;
+}
+.logo {
+  margin-bottom: 44px;
+}
+.menu {
+  padding-bottom: 44px;
+}
+.menu a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  padding-right: 35px;
+}
+.contact-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  align-items: center;
+  color: #ffffff;
+  background: #62d0df;
+  padding: 16px 55px;
+  margin-bottom: 66px;
+  display: inline-block;
+}
+.title-main {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 34px;
+  width: 505px;
+}
+.text-about {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #d6d6d6;
+  margin: 0 0 60px;
+  width: 505px;
+}
+.question-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #f9b640;
+  padding: 13px 52px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.question-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #fab63e;
+  margin: 0;
+}
+.mid-background {
+  background: #62d0df;
+}
+.mid-content {
+  padding: 68px 0 82px;
+}
+.title-about {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 45px;
+}
+.box {
+  background: #c4c4c4;
+  padding: 40px 40px 9px;
+}
+.box p {
+  padding-bottom: 34px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #0b0b0b;
+}
+.bottom-background {
+  background-image: url(../img/background-bottom.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bottom-content {
+  padding: 92px 0 139px;
+}
+.bottom-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #720e0e;
+  margin: 0;
+  padding-bottom: 59px;
+  width: 1040px;
+}
+.bottom-text p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+  padding-bottom: 34px;
+  margin: 0px;
+}

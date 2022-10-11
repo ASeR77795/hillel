@@ -1,0 +1,141 @@
+* {
+  margin: 0px;
+}
+.body {
+  font-family: Tahoma, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.header-background {
+  background: #eeeff1;
+}
+.container {
+  max-width: 1111px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header-content {
+  padding: 70px 0 73px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.logo {
+  float: left;
+}
+.menu {
+  float: right;
+  margin: 6px 5px 0 0;
+}
+.menu a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  margin-left: 39px;
+}
+.top-section {
+  padding: 62px 0 143px;
+}
+.disign-logo {
+  float: left;
+  margin-top: 35px;
+}
+.main-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 79px;
+  color: #000000;
+  padding-bottom: 38px;
+}
+.about-disign-logo {
+  float: right;
+  margin: -2px 26px 0 0;
+}
+.main-title-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  padding-bottom: 51px;
+}
+.contact-button {
+  background: #34547a;
+  padding: 19px 45px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.mid-section {
+  background: #eeeff1;
+  padding: 48px 6px 100px 0;
+}
+.mid-section-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 22px;
+}
+.mid-section-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #727272;
+  padding-bottom: 49px;
+}
+.mid-img {
+  margin: 0 auto;
+  display: block;
+}
+.bottom-section {
+  padding: 141px 0 87px;
+}
+.bottom-img {
+  margin-right: 30px;
+  margin-bottom: 28px;
+  float: left;
+}
+.mr-0 {
+  margin-right: 0;
+}
+.footer {
+  background: #34547a;
+}
+.footer-content {
+  float: left;
+}
+.signature {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+  padding: 39px 0 11px;
+}
+.rights {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff;
+  padding-bottom: 38px;
+}
+.link-social {
+  float: right;
+  padding: 35px 0 31px;
+}
+.link-social a {
+  padding-left: 32px;
+}
