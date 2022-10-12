@@ -32,6 +32,8 @@ if (sport == "баскетбол" || sport == "Баскетбол") {
   sportsman = "Девидом Бекхемом";
 } else if (sport == "бокс" || sport == "Бокс") {
   sportsman = "Виталием Кличко?";
+} else {
+  sportsman = "лучшим в своем спорте!";
 }
 alert(
   "Тебе - " +
