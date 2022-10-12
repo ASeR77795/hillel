@@ -2,20 +2,18 @@ let sportsman = "";
 let capital = "";
 let year = prompt("В каком году вы родились?");
 let age = 2022 - year;
-
-if (year == null) {
+if (year == null || year == "") {
   alert("Жаль что вы не захотели указать свой возраст...");
   age = "неизвестно сколько";
 }
 let city = prompt("В каком городе вы живете?");
-if (city == null) {
+if (city == null || city == "") {
   alert("Жаль что вы не захотели указать свой город...");
   capital = "неизвестно какой страны";
   city = capital;
 }
 let sport = prompt("Ваш любимый вид спорта?");
-
-if (sport == null) {
+if (sport == null || sport == "") {
   alert("Жаль что вы не захотели указать свой любимый вид спорта...");
   sportsman = "неизвестно кем";
 }
@@ -28,7 +26,6 @@ if (city == "киев" || city == "Киев") {
 } else {
   capital = "Ты живешь в городе - " + city;
 }
-
 if (sport == "баскетбол" || sport == "Баскетбол") {
   sportsman = "Майкл Джорданом?";
 } else if (sport == "футбол" || sport == "Футбол") {
