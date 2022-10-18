@@ -1,6 +1,7 @@
 var want = prompt("что сделать:\nadd, sub, mult, div");
 var num1 = prompt("первое число");
 var num2 = prompt("второе число");
+
 if (want === "add") {
   alert(num1 + " + " + num2 + " = " + (Number(num1) + Number(num2)));
 } else if (want === "sub") {
@@ -9,4 +10,6 @@ if (want === "add") {
   alert(num1 + " * " + num2 + " = " + Number(num1) * Number(num2));
 } else if (want === "div") {
   alert(num1 + " / " + num2 + " = " + Number(num1) / Number(num2));
+} else {
+  alert("Incorect operation!");
 }
