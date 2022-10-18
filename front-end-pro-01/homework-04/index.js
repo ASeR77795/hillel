@@ -2,16 +2,7 @@ let name = prompt("Enter your name!");
 let age = +prompt("Enter your age!");
 let surName = prompt("Enter your surname!");
 if (isNaN(name) && !isNaN(age) && isNaN(surName)) {
-  alert(
-    "Ваше имя - " +
-      name +
-      "\n" +
-      "Ваш возраст - " +
-      age +
-      "\n" +
-      "Ваша фамилия - " +
-      surName
-  );
+  alert(`Ваше имя - ${name}\nВаш вщзраст - ${age}\nВаша фамилия - ${surName}`);
 } else {
   alert("Incorect imput!");
 }
