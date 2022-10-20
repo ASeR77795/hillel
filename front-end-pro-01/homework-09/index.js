@@ -1,8 +1,10 @@
 // // - Вивести на сторінку в один рядок через кому числа від 10 до 20
-// let srt = "";
-// for (num1 = 10; num1 < 20; num1++) {
-//   console.log((str += num1 += ","));
-// }
+let str = "";
+for (num1 = 10; num1 <= 20; num1 += 1) {
+  str += num1 + ",";
+}
+console.log(str);
+
 // // - Вивести квадрати чисел від 10 до 20
 // for (num2 = 10; num2 < 20; num2++) {
 //   console.log(num2 * num2);
@@ -64,10 +66,10 @@
 //   }
 // }
 // -Надрукувати повну таблицю множення від 1 до 10
-let result = "\n";
-for (num15 = 1; num15 < 10; num15++) {
-  for (num16 = 1; num16 < 11; num16++) {
-    result += num15 * num16 + " ";
-  }
-  console.log((result += "\n"));
-}
+// let result = "\n";
+// for (num15 = 1; num15 < 10; num15++) {
+//   for (num16 = 1; num16 < 11; num16++) {
+//     result += num15 * num16 + " ";
+//   }
+//   console.log((result += "\n"));
+// }
