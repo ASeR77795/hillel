@@ -19,62 +19,36 @@
 // }
 
 // - Дане ціле число. З'ясувати, чи є воно простим (простим називається число, більше 1, які не мають інших дільників крім 1 і себе).
-// let num = +prompt();
-// next: for (let num1 = 2; num1 <= num; num1++) {
-//   for (let num2 = 2; num2 < num1; num2++) {
-//     if (num1 % num2 === 0) continue next;
-//   }
-//   alert(`${num1} простое`);
-
-// function isPrime(n) {
-//   if (n < 2) {
-//     return "Число должно быть больше 1";
-//   } else if (n === 2) {
-//     return "Простое число";
-//   }
-
-//   let i = 2;
-//   const limit = Math.sqrt(n);
-//   while (i <= limit) {
-//     if (n % i === 0) {
-//       return "Составное число";
-//     }
-//     i += 1;
-//   }
-
-//   return "Простое число";
+// let n = parseInt(prompt());
+// if (n < 2) {
+//   alert("Число должно быть больше 1");
+// } else if (n === 2) {
+//   alert("Простое число");
 // }
-// let input = prompt();
-// alert(isPrime(parseInt(input)));
-
-let n = parseInt(prompt());
-if (n < 2) {
-  alert("Число должно быть больше 1");
-} else if (n === 2) {
-  alert("Простое число");
-}
-let flag = false;
-let i = 2;
-let limit = Math.sqrt(n);
-while (i <= limit) {
-  if (n % i === 0 && flag !== true) {
-    alert("Составное число");
-    flag = true;
-  }
-  i += 1;
-}
-if (flag !== true) {
-  alert("Простое число");
-}
-
+// let flag = false;
+// let i = 2;
+// let limit = Math.sqrt(n);
+// while (i <= limit) {
+//   if (n % i === 0 && flag !== true) {
+//     alert("Составное число");
+//     flag = true;
+//   }
+//   i += 1;
+// }
+// if (flag !== true) {
+//   alert("Простое число");
+// }
 // - Дане деяке число. Визначити, чи можна одержати це число шляхом зведення числа 3 у деякий ступінь.
 // (Наприклад, числа 9, 81 можна отримати, а 13 - не можна)
 // let num = +prompt();
-// for (num1 = 3; num1 < 1000; num1 *= num1) {
+// for (num1 = 3; num1 <= 10000; num1 *= num1) {
 //   if (num === num1) {
-//     alert(`можно ${num1 / 3}`);
-//   } else {
+//     alert("можно");
+//     break;
+//   } else if (num1 < num) {
 //     continue;
+//   } else if (num1 !== num) {
 //     alert("не можно");
+//     break;
 //   }
 // }
