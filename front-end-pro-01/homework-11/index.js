@@ -10,35 +10,30 @@ console.log(numOrStr);
 // } else {
 //   console.log("OK!");
 // }
-
-switch (numOrStr) {
-  case null:
-    console.log("ви скасували");
-    break;
-  case numOrStr.trim() === "":
-    console.log("Empty String");
-    break;
-  case isNaN(+numOrStr):
-    console.log(" number is Ba_NaN");
-    break;
-  default:
-    console.log("OK!");
-}
-
-// let result;
 // switch (numOrStr) {
-//   case result:
-//     result = null;
+//   case null:
 //     console.log("ви скасували");
 //     break;
-//   case result:
-//     result = numOrStr.trim() === "";
-//     console.log("Empty String");
-//     break;
-//   case result:
-//     result = isNaN(+numOrStr);
-//     console.log(" number is Ba_NaN");
-//     break;
-//   default:
-//     console.log("OK!");
 // }
+const getRes2 = (numOrStr) => {
+  switch (typeof numOrStr) {
+    case "object":
+      console.log("ви скасували");
+      break;
+    case "string":
+      switch (numOrStr.trim()) {
+        case "":
+          console.log("Empty String");
+          break;
+        default:
+          switch (isNaN(+numOrStr)) {
+            case true:
+              console.log("Number is isNaN");
+              break;
+            default:
+              console.log("OK!");
+          }
+      }
+  }
+};
+console.log(getRes2(numOrStr));
