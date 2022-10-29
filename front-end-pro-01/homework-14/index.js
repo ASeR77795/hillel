@@ -26,22 +26,22 @@ let store = {
 };
 store.clients = {};
 store.clients["Irina Mararova"] = {
-  quantity: Number(),
-  bonuses: Number(),
+  quantity: 10,
+  bonuses: 10,
 };
 store.clients["Mikhall Hitko"] = {
-  quantity: Number(),
-  bonuses: Number(),
+  quantity: 10,
+  bonuses: 10,
 };
 store.clients["Oleksandra Horbenko"] = {
-  quantity: Number(),
-  bonuses: Number(),
+  quantity: 10,
+  bonuses: 10,
 };
 store.clients["Olena Demchuk"] = {
-  quantity: Number(),
-  bonuses: Number(),
+  quantity: 10,
+  bonuses: 10,
 };
 store.clients["Pavlo Fedorenko"] = {
-  quantity: Number(),
-  bonuses: Number(),
+  quantity: 10,
+  bonuses: 10,
 };
