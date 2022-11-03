@@ -40,4 +40,4 @@ let ladder = {
     return this;
   },
 };
-ladder.up().up().down().showStep();
+ladder.up().up().down().showStep().down();
