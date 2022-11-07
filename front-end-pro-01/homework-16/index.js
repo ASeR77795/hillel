@@ -5,15 +5,18 @@
 // Видалити елементи з масиву з 2 по 4 (включно!).
 
 // У міру змін виводити вміст масиву на сторінку.
-let numbers;
+
+let userImput = +prompt("How long?");
+let number;
 let arr = [];
-while ((numbers = prompt("Enter your number"))) {
-  if (numbers === "" || isNaN(numbers)) {
+for (let count = 0; count < userImput; count += 1) {
+  number = prompt("Enter your number");
+  if (number === "" || number === null || isNaN(number)) {
+    count -= 1;
     alert("Enter correct number");
-    continue;
+  } else {
+    arr.push(number);
   }
-  console.log(numbers);
-  arr.push(+numbers);
 }
 arr.sort((a, b) => {
   return a - b;
