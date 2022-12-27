@@ -14,14 +14,22 @@ const array = [
   76, -4, 12, -35, 4, 47,
 ];
 // 1 Знайти суму та кількість позитивних елементів.
-let sum = 0;
+// let sum = 0;
+// let countPositive = 0;
+// array.forEach((number) => {
+//   if (number > 0) {
+//     sum += number;
+//     countPositive += 1;
+//   }
+// });
 let countPositive = 0;
-array.forEach((number) => {
+let sum = array.reduce((total, number) => {
   if (number > 0) {
-    sum += number;
     countPositive += 1;
+    total += number;
   }
-});
+  return total;
+}, 0);
 console.log(sum, countPositive);
 //  2 Знайти мінімальний елемент масиву та його порядковий номер.
 let minIndex = array.indexOf(Math.min.apply(null, array));
@@ -58,27 +66,45 @@ array.forEach((number) => {
 });
 console.log(countPariedPositive);
 // // 7  Знайти суму парних позитивних елементів.
-let sumPositivePared = 0;
-array.forEach((number) => {
+// let sumPositivePared = 0;
+// array.forEach((number) => {
+//   if (number > 0 && number % 2 === 0) {
+//     sumPositivePared += number;
+//   }
+// });
+let sumPositivePared = array.reduce((total, number) => {
   if (number > 0 && number % 2 === 0) {
-    sumPositivePared += number;
+    total += number;
   }
-});
+  return total;
+}, 0);
 console.log(sumPositivePared);
 // // 8 Знайти суму непарних позитивних елементів.
-let sumPositiveUnpared = 0;
-array.forEach((number) => {
+// let sumPositiveUnpared = 0;
+// array.forEach((number) => {
+//   if (number > 0 && number % 2 !== 0) {
+//     sumPositiveUnpared += number;
+//   }
+// });
+let sumPositiveUnpared = array.reduce((total, number) => {
   if (number > 0 && number % 2 !== 0) {
-    sumPositiveUnpared += number;
+    total += number;
   }
-});
+  return total;
+}, 0);
 console.log(sumPositiveUnpared);
 // // 9 Знайти добуток позитивних елементів.
-let compositionPositive = 1;
-array.forEach((number) => {
+// let compositionPositive = 1;
+// array.forEach((number) => {
+//   if (number > 0) {
+//     compositionPositive = compositionPositive * number;
+//   }
+// });
+let compositionPositive = array.reduce((total, number) => {
   if (number > 0) {
-    compositionPositive = compositionPositive * number;
+    total *= number;
   }
+  return total;
 });
 console.log(compositionPositive);
 // // 10 Знайти найбільший серед елементів масиву, ост альні обнулити.
