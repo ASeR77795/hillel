@@ -10,5 +10,5 @@ function removeElement(arr, number) {
   }
   return arr;
 }
-newArray = removeElement(arr, 50);
+newArray = removeElement(arr, 5);
 console.log(newArray);
