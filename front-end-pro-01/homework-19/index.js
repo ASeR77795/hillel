@@ -1,7 +1,14 @@
-const array = [1, 2, 3, 4, 5, 6, 7];
-function removeElement(array, number) {
-  array.splice(array.indexOf(number), 1);
-}
-removeElement(array, 5);
-console.log(array);
 // Результат: [1, 2, 3, 4, 6, 7]
+
+const arr = [1, 2, 3, 4, 5, 6, 7];
+function removeElement(arr, number) {
+  let index = arr.indexOf(number);
+  if (index !== -1) {
+    arr.splice(index, 1);
+  } else {
+    console.log("error");
+  }
+  return arr;
+}
+newArray = removeElement(arr, 50);
+console.log(newArray);
