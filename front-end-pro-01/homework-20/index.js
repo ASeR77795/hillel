@@ -6,6 +6,7 @@
 // Методи:
 // конструктор, який приймає два параметри: імʼя та вік;
 // метод, який виводить у консоль інформацію про людину.
+
 function Person(name, age) {
   this.name = name;
   this.age = age;
@@ -24,35 +25,65 @@ human.logHuman();
 // метод, який виводить у консоль інформацію про автомобіль та викликає метод виводу інформації класу Людина
 // для виведення інформації про власника
 
-class Car {
-  constructor(brand, model, year, number) {
-    this.brand = brand;
-    this.model = model;
-    this.year = year;
-    this.number = number;
-  }
-
-  setOwner(owner) {
+function Car(brand, model, year, number) {
+  this.brand = brand;
+  this.model = model;
+  this.year = year;
+  this.number = number;
+  this.owner = [];
+  this.setOwner = (item) => {
+    console.log(this);
     if (owner.age > 18) {
-      this.owner = owner;
+      this.owner.push(item);
     } else {
       console.log("error");
     }
-  }
-
-  displayInfo() {
+  };
+  this.displayInfo = () => {
     console.log(this.brand, this.model, this.year, this.number);
     this.owner.logHuman();
-  }
+  };
 }
 
 let car = new Car("tesla", "x", "2015", "2233");
 let owner = new Person("Bob", "17");
 let owner1 = new Person("Bred", "27");
+let owner2 = new Person("Masha", "19");
 
 car.setOwner(owner);
 car.setOwner(owner1);
+car.setOwner(owner2);
 car.displayInfo();
+
+// class Car {
+//   constructor(brand, model, year, number) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.year = year;
+//     this.number = number;
+//   }
+
+//   setOwner(owner) {
+//     if (owner.age > 18) {
+//       this.owner = owner;
+//     } else {
+//       console.log("error");
+//     }
+//   }
+
+//   displayInfo() {
+//     console.log(this.brand, this.model, this.year, this.number);
+//     this.owner.logHuman();
+//   }
+// }
+
+// let car = new Car("tesla", "x", "2015", "2233");
+// let owner = new Person("Bob", "17");
+// let owner1 = new Person("Bred", "27");
+
+// car.setOwner(owner);
+// car.setOwner(owner1);
+// car.displayInfo();
 
 // В якості демонстраціїї створити:
 
