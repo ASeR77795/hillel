@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="goods">
+        <ul class="goods__list">
+          <li data-number="1" data-item="powerbank" class="goods__item">
+            powebank
+            <button data-number="1" type="button" class="good__btn">buy</button>
+          </li>
+          <li data-count="2" data-item="phone" class="goods__item">
+            phone
+            <button data-number="2" type="button" class="good__btn">buy</button>
+          </li>
+          <li data-number="3" data-item="laptop" class="goods__item">
+            laptop
+            <button data-number="3" type="button" class="good__btn">buy</button>
+          </li>
+          <li data-number="4" data-item="lamp" class="goods__item">
+            lamp
+            <button data-number="4" type="button" class="good__btn">buy</button>
+          </li>
+        </ul>
+        <div class="goods__form active">
+          <form action="" method="post">
+            <label for="name">ПІБ покупця:</label>
+            <input type="text" id="name" name="name" required /><br />
+            <span id="name-error" class="error-message invalid"
+              >Введите правильное ФИО</span
+            >
+
+            <label for="city">Місто:</label>
+            <select id="city" name="city" required>
+              <option value="">Виберіть місто</option>
+              <option value="Київ">Київ</option>
+              <option value="Львів">Львів</option>
+              <option value="Харків">Харків</option>
+              <option value="Одеса">Одеса</option></select
+            ><br />
+
+            <label for="post-office">Склад Нової пошти для надсилання:</label>
+            <input type="text" id="post-office" name="post_office" required />
+            <span id="post-office-error" class="error-message invalid">
+              Введите правильное значение</span
+            ><br />
+
+            <label for="payment-type">Тип оплати:</label>
+            <select id="payment-type" name="payment_type" required>
+              <option value="Післяплата">Післяплата</option>
+              <option value="Банківська карта">Банківська карта</option></select
+            ><br />
+
+            <label for="quantity">Кількість продукції:</label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              max="100"
+              required
+            /><br />
+
+            <label for="comment">Коментар до замовлення:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea
+            ><br />
+            <button id="byuBtn" type="button">Купити</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal active">
+        <div class="modal-box">
+          <h1>Ваш заказ</h1>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
