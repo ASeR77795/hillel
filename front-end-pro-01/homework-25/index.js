@@ -55,18 +55,15 @@ function validateInputOnBlur(inputElement, validationFunction, errorElement) {
     }
   });
 }
-Object.values(order).forEach((item) => {
-  const li = document.createElement("li");
-  li.append(item);
-  modalBox.append(li);
-});
+
 byuBtn.addEventListener("click", () => {
+  event.preventDefault();
   saveOrder();
   modal.classList.remove("active");
-  Object.values(order).forEach((item) => {
-    const li = document.createElement("li");
-    li.append(item);
-    modalBox.append(li);
+  Object.entries(order).forEach((item) => {
+    const p = document.createElement("p");
+    p.append(`${item[0]} - ${item[1]}`);
+    modalBox.append(p);
   });
 });
 validateInputOnBlur(nameInput, isValidName, nameError);

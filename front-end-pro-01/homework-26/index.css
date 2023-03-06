@@ -78,3 +78,6 @@ table th {
 .invalid {
   display: none;
 }
+.hide {
+  display: none;
+}

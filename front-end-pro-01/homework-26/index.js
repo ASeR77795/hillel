@@ -9,6 +9,8 @@ const address = document.getElementById("address");
 const btn = document.getElementById("btn");
 const checkBox = document.querySelectorAll(".checkbox");
 const gender = document.querySelectorAll(".gender");
+const table = document.getElementById("table");
+const form = document.querySelector(".registration-form");
 function isValidText(text) {
   let regex = /^[a-zA-Zа-яА-Я]+([- ]?[a-zA-Zа-яА-Я]+)*$/;
   return regex.test(text);
@@ -53,9 +55,26 @@ function saveForm() {
   });
 }
 btn.addEventListener("click", () => {
+  event.preventDefault();
   saveForm();
   console.log(data);
+  renderData();
+  form.classList.add("hide");
+  table.classList.remove("hide");
 });
+function renderData() {
+  const entries = Object.entries(data);
+  entries.forEach((item) => {
+    const tr = document.createElement("tr");
+    const td = document.createElement("td");
+    table.append(tr);
+    tr.append(td);
+    td.innerText = item[0];
+    const td2 = document.createElement("td");
+    tr.append(td2);
+    td2.innerText = item[1];
+  });
+}
 validateInputOnBlur(nameInput, isValidText, nameError);
 validateInputOnBlur(lastNameInput, isValidText, lastNameError);
 validateInputOnBlur(birthDateInput, isValidBirth, dateError);
