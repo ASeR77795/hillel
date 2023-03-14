@@ -1,0 +1,18 @@
+p {
+  margin: 0;
+}
+.smiles {
+  display: flex;
+}
+.smiles button {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.smiles p {
+}
+.smile {
+  width: 50px;
+}
+.none {
+  display: none;
+}
