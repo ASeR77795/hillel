@@ -9,6 +9,8 @@ p {
   cursor: pointer;
 }
 .smiles p {
+  color: red;
+  font-weight: bold;
 }
 .smile {
   width: 50px;
