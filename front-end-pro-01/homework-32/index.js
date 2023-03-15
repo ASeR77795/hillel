@@ -4,18 +4,18 @@ const box = document.querySelector(".box");
 function createList(arr) {
   const ul = document.createElement("ul");
 
-  for (let i = 0; i < arr.length; i++) {
+  arr.forEach((item) => {
     const li = document.createElement("li");
 
-    if (Array.isArray(arr[i])) {
-      const nestedUl = createList(arr[i]);
+    if (Array.isArray(item)) {
+      const nestedUl = createList(item);
       li.appendChild(nestedUl);
     } else {
-      li.textContent = arr[i];
+      li.textContent = item;
     }
 
     ul.appendChild(li);
-  }
+  });
 
   return ul;
 }
